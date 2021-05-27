@@ -23,7 +23,7 @@ public class LoginTest {
 	@Test
 	public void doLogin() {
 		driver.get("https://www.facebook.com");
-		System.out.println(driver.getTitle());
+		System.out.println("The title is-->"+driver.getTitle());
 		driver.findElement(By.id("email")).sendKeys("shekhar.swarna@gmail.com");
 		driver.findElement(By.id("pass")).sendKeys("goodguy@6682");
 		driver.findElement(By.name("login")).click();
